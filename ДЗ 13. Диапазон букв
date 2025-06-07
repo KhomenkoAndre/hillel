@@ -1,0 +1,15 @@
+import string
+int = input("введите диапазон " )
+first_letter = (int[0])
+second_letter = (int[2])
+for i in range(len(string.ascii_letters)):
+    if string.ascii_letters[i] in first_letter:
+        fromlist = string.ascii_letters.index(string.ascii_letters[i])
+        break
+for i in range(len(string.ascii_letters)):
+    if string.ascii_letters[i] in second_letter:
+        i = i + 1
+        tolist = string.ascii_letters.index(string.ascii_letters[i])
+        break
+result =''.join (string.ascii_letters[ fromlist : tolist ]).split()
+print(*result)
