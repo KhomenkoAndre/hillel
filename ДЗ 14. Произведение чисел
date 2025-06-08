@@ -1,0 +1,22 @@
+numbers = int(input())
+numbers = [int(digit) for digit in str(numbers)]
+result = 1
+result_2 = 1
+
+while True:
+    for num in numbers:
+        result = (result * num)
+    if result <= 8:
+        print(result)
+        break
+    else:
+        result = [int(digit) for digit in str(result)]
+        for num in result:
+            result_2 = (result_2 * num)
+        if result_2 <= 8:
+            print(result_2)
+            break
+        else:
+            numbers = [int(digit) for digit in str(result_2)]
+            result = 1
+            result_2 = 1
