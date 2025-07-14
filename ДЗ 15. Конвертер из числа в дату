@@ -1,0 +1,8 @@
+number = int(input( ))
+days,convert_1 = divmod(number, 86400)
+howers, convert_2 = divmod(convert_1, 3600)
+minutes, convert_3 = divmod(convert_2, 60)
+secundes, convert_4 = divmod(convert_3, 1)
+
+result = str(days) + " дня," + str(howers) + ":" + str(minutes) + ":" + str(secundes)
+print (result)
