@@ -1,0 +1,7 @@
+def say_hi(name, age):
+    result = "Hi. My name is " + name + " and I am " + str(age) + " years old."
+    return result
+
+name = input("What is your name? ")
+age = int(input ("How old are you? "))
+print (say_hi(name, age))
