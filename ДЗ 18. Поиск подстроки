@@ -1,0 +1,10 @@
+string = input("enter your string " )
+letter = input("enter your letter ")
+def f (string):
+    count_letter = (string.count(letter))
+    if count_letter < 2:
+        return
+    else:
+        ind = string.find (str(letter))
+        return  (string.find (letter, ind +1))
+print(f(string))
