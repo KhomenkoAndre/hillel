@@ -1,11 +1,8 @@
-def correct_sentence (sentence , edit_operation):
+def correct_sentence (sentence):
     if "." not in sentence[-1]:
         edit_operation = sentence[0].upper() + sentence[1:] + "."
         return edit_operation
-    else:
-        edit_operation = sentence[0].upper() + sentence[1:]
-        return edit_operation
+    return sentence[0].upper() + sentence[1:]
 sentence = input("Enter sentence : ")
-edit_operation = ""
-result = (correct_sentence (sentence, edit_operation))
+result = (correct_sentence (sentence))
 print (result)
