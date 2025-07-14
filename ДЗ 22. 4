@@ -1,0 +1,22 @@
+import random
+
+def random_list (list):
+    list = {random.randint(1, 1000) for i in range (0, (random.randint(0, 1000)))}
+    return list
+
+list_1 = (random_list (list))
+list_1_copy = list_1.copy()
+for i in list_1_copy:
+    if not i % 3 == 0:
+        list_1.remove(i)
+print(list_1)
+
+list_2 = (random_list (list))
+list_2_copy = list_2.copy()
+for i in list_2_copy:
+    if not i % 5 == 0:
+        list_2.remove(i)
+print(list_2)
+
+result = set.intersection(list_1, list_2)
+print(result)
