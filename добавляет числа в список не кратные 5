@@ -1,0 +1,5 @@
+a = [10, 15, 20, 22, 35, 2, 0, 55, 20, 1]
+def f ():
+    b = [x for x in a if not x % 5 == 0 or x % 2 == 0]
+    return b
+print (f())
