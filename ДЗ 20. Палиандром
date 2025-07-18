@@ -1,0 +1,5 @@
+inp = ('A man, a plan, a canal: Panama')
+def f(x):
+    d = "".join(i.lower() for i in x if i.isalnum())
+    return d == d[::-1]
+print(f(inp))
