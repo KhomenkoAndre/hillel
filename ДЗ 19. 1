@@ -1,0 +1,10 @@
+digits = [9]
+def tranfer(number):
+    str_digits = []
+    for d in number:
+        str_digits.append(str(d))
+    number_str = ''.join(str_digits)
+    number_str = int(number_str) + 1
+    str_digits = [int(d) for d in str(number_str)]
+    return str_digits
+print (tranfer(digits))
