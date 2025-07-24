@@ -1,0 +1,12 @@
+text = ("When I was One I had just begun When I was Two I was nearly new ")
+l = ['i', 'was', 'three', 'near' ]
+
+def popular_words (int):
+    dict = {}
+    int = int.lower().split()
+    for i in l:
+        result = int.count(i)
+        dict[i.lower()] = result
+    return dict
+
+print(popular_words(text))
